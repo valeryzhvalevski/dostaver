@@ -131,6 +131,7 @@ body a {
 }
 
 .main-screen__text {
+  position: relative;
   margin-top: 25px;
   color: #fff;
   font-family: "Golos Text", sans-serif;
@@ -182,9 +183,46 @@ body a {
   margin-top: 11px;
 }
 
+.main-screen__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .main-screen__line {
   position: absolute;
   bottom: 182px;
   width: 100%;
+}
+
+.main-screen__sticker {
+  position: absolute;
+  -webkit-transform: rotate(-21.242deg);
+          transform: rotate(-21.242deg);
+}
+
+.main-screen__sticker .sticker__percentage {
+  background-color: #fff;
+  width: 128px;
+  height: 128px;
+  border-radius: 60px;
+}
+
+.main-screen__sticker .sticker__percentage p {
+  color: #7700D1;
+}
+
+.main-screen__sticker .sticker__text {
+  width: 136px;
+  text-align: center;
+  font-family: "Golos Text", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
 }
 /*# sourceMappingURL=style.css.map */

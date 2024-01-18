@@ -79,6 +79,7 @@
   }
 }
 .main-screen__text {
+  position: relative;
   margin-top: 25px;
   color: #fff;
   font-family: $font-fam-Golos;
@@ -98,7 +99,8 @@
   border-radius: 43px;
   background: #fff;
   &::placeholder {
-    text-align: center;  }
+    text-align: center;
+  }
 }
 .form__button {
   width: 284px;
@@ -109,8 +111,34 @@
 .form__checkbox {
   margin-top: 11px;
 }
+.main-screen__images {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
 .main-screen__line {
   position: absolute;
   bottom: 182px;
   width: 100%;
+}
+.main-screen__sticker {
+  position: absolute;
+  transform: rotate(-21.242deg);
+  .sticker__percentage {
+    background-color: #fff;
+    width: 128px;
+    height: 128px;
+    border-radius: 60px;
+    p{
+      color: $main-bg;
+    }
+  }
+  .sticker__text {
+    width: 136px;
+    text-align: center;
+    font-family: $font-fam-Golos;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+  }
 }
