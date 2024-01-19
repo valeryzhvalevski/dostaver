@@ -52,13 +52,15 @@
   display: flex;
   gap: 6px;
 }
-.wrapper__main {
-  width: 90%;
-  margin: 0 auto;
-}
+// .wrapper__main-screen {
+//   width: 90%;
+//   margin: 0 auto;
+// }
 .main-screen {
   // height: calc(100vh - 123px);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 .main-screen__title {
   margin-top: 90px;
@@ -143,6 +145,27 @@
   top: 30%;
   left: 8%;
 }
+.cloud-right {
+  position: absolute;
+  top: 12%;
+  right: 23%;
+}
+.cloud-small {
+  position: absolute;
+  top: 57%;
+  right: 37%;
+}
+.bg-houses {
+  position: absolute;
+  bottom: 0;
+  right: -4%;
+  z-index: -2;
+}
+.sun {
+  position: absolute;
+  top: 18%;
+  right: 5%;
+}
 .main-screen__ground {
   position: absolute;
   width: 100%;
@@ -178,5 +201,47 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+  }
+}
+.price {
+}
+.price__text-item {
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: $font-fam-Golos;
+    font-size: 46px;
+    font-weight: 400;
+    margin-top: 100px;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: $font-fam-Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+.table__price {
+  width: 60%;
+  margin: 0 auto;
+margin-top: 60px;
+  table {
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th:first-child {
+    width: 20%; /* Размер первого столбца в два раза больше ширины остальных */
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
   }
 }
