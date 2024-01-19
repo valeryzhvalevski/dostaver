@@ -111,6 +111,7 @@ body a {
 
 .main-screen__title {
   margin-top: 90px;
+  position: relative;
 }
 
 .main-screen__title h1 {
@@ -128,6 +129,11 @@ body a {
   font-size: 72px;
   font-weight: 400;
   line-height: 66px;
+}
+
+.main-screen__title .main-screen__ellipse {
+  position: absolute;
+  bottom: 0;
 }
 
 .main-screen__text {
@@ -192,11 +198,36 @@ body a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
 }
 
-.main-screen__line {
+.main-screen__line-main-screen {
   position: absolute;
-  bottom: 182px;
+  top: 17%;
+  width: 63%;
+  z-index: -1;
+}
+
+.location-left {
+  position: absolute;
+  left: 16%;
+  top: 26%;
+}
+
+.location-right {
+  position: absolute;
+  right: 16%;
+  top: 0;
+}
+
+.cloud-left {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+
+.main-screen__ground {
+  position: absolute;
   width: 100%;
 }
 
@@ -204,17 +235,39 @@ body a {
   position: absolute;
   -webkit-transform: rotate(-21.242deg);
           transform: rotate(-21.242deg);
+  left: 16vw;
+  top: 1vh;
 }
 
 .main-screen__sticker .sticker__percentage {
   background-color: #fff;
   width: 128px;
   height: 128px;
-  border-radius: 60px;
+  border-radius: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-screen__sticker .sticker__percentage p {
   color: #7700D1;
+}
+
+.main-screen__sticker .sticker__percentage span {
+  font-family: "Golos Text", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
 }
 
 .main-screen__sticker .sticker__text {
