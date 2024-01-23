@@ -224,24 +224,98 @@
   }
 }
 .table__price {
-  width: 60%;
+  max-width: 1100px;
   margin: 0 auto;
-margin-top: 60px;
+  margin-top: 60px;
   table {
-    border-collapse: collapse;
+    // border-collapse: collapse;
+    width: 100%;
   }
   th,
   td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+    color: #fff;
+    font-family: $font-fam-Golos;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border: 3px solid #f2f2f2;
+    padding: 23px 0;
+    background-color: $main-bg;
   }
-
-  th:first-child {
-    width: 20%; /* Размер первого столбца в два раза больше ширины остальных */
-  }
-
-  tr:nth-child(even) {
+  thead tr:first-of-type th {
     background-color: #f2f2f2;
+    color: $main-bg;
   }
+  td:first-child,
+  th:first-child {
+    background-color: #f2f2f2;
+    color: $main-bg;
+  }
+  th:first-child {
+    width: 35%;
+    border-radius: 38px 0 0 0;
+    background-color: $main-bg;
+    color: white;
+  }
+  th:last-child {
+    border-radius: 0 38px 0 0;
+  }
+  tbody tr:first-child td {
+    background-color: $main-bg;
+    color: white;
+  }
+  tbody tr:nth-of-type(9) td:last-child {
+    border-radius: 0 0 38px 0;
+  }
+  tbody tr:nth-of-type(9) td:first-child {
+    border-radius: 0 0 0 38px;
+  }
+}
+.price__bg-img {
+  position: relative;
+}
+.bg-img__illustration {
+  position: absolute;
+  z-index: -2;
+  bottom: 0;
+  right: 0;
+}
+.price__bg-img__car {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+.price__bg-img__left-location {
+  position: absolute;
+  bottom: 290px;
+  left: 25px;
+  z-index: -1;
+}
+.price__bg-img__right-location {
+  position: absolute;
+  bottom: 582px;
+  right: 57px;
+  z-index: -1;
+}
+.price__bg-img__right-location-line {
+  position: absolute;
+  bottom: 521px;
+  right: 85px;
+  z-index: -1;
+}
+.price__bg-img__cloud {
+  position: absolute;
+  bottom: 512px;
+  left: 121px;
+  z-index: -1;
+}
+.price__bg-img__cloud-small {
+  position: absolute;
+  bottom: 355px;
+  right: 90px;
+  z-index: -1;
 }
