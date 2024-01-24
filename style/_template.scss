@@ -16,7 +16,27 @@ body {
     text-decoration: none;
   }
 }
+.section-block {
+  h2 {
+    color: #fff;
+    text-align: center;
+    font-family: $font-fam-Golos;
+    font-size: 46px;
+    font-weight: 400;
+    margin-top: 100px;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-family: $font-fam-Golos;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
 
+}
 .text {
   color: #fff;
   font-family: $font-fam-Golos;
@@ -28,4 +48,9 @@ body {
 %btn {
   border-radius: 43px;
   background: linear-gradient(180deg, #ffe149 0%, #ffd500 100%);
+}
+.processes {
+  img {
+    position: absolute;
+  }
 }

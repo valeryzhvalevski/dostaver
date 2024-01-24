@@ -206,29 +206,11 @@
 .price {
 }
 .price__text-item {
-  h2 {
-    color: #fff;
-    text-align: center;
-    font-family: $font-fam-Golos;
-    font-size: 46px;
-    font-weight: 400;
-    margin-top: 100px;
-  }
-  p {
-    color: #fff;
-    text-align: center;
-    font-family: $font-fam-Golos;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-  }
 }
 .table__price {
   max-width: 1100px;
   margin: 0 auto;
-  margin-top: 60px;
   table {
-    // border-collapse: collapse;
     width: 100%;
   }
   th,
@@ -318,4 +300,110 @@
   bottom: 355px;
   right: 90px;
   z-index: -1;
+}
+.processes {
+  overflow: hidden;
+  position: relative;
+}
+.processes__items {
+  max-width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.processes__item {
+  flex: 0 1 48%;
+  height: 378px;
+  border-radius: 38px;
+  background: #fff;
+  padding: 52px 52px 43px 52px;
+}
+.processes__top-of-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.processes__top-of-item-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: $main-bg;
+  height: 58px;
+  width: 58px;
+  border-radius: 30px;
+  color: #fff;
+}
+.processes__top-of-item-title {
+  color: $main-bg;
+  font-family: $font-fam-Golos;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.processes__body-of-item {
+}
+.processes__body-of-item-text {
+  color: $main-bg;
+  font-family: $font-fam-Golos;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 30px 0;
+}
+.processes__link {
+  color: $main-bg;
+  font-family: $font-fam-Golos;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 4px;
+  font-weight: 600;
+  border-bottom: 2px dashed $main-bg;
+}
+.processes__link-after-items {
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 54px;
+  border-bottom: 2px dashed #fff;
+}
+.processes__stock-left {
+  bottom: 100px;
+  left: 0;
+  z-index: -2;
+}
+.processes__stock-right {
+  transform: scale(-1, 1);
+  bottom: 100px;
+  right: 0;
+  z-index: -2;
+}
+.processes__box-left-1 {
+  bottom: 110px;
+  left: -102px;
+  z-index: -2;
+}
+.processes__box-left-2 {
+  bottom: 110px;
+  left: 86px;
+  z-index: -2;
+}
+.processes__box-right-1 {
+  bottom: 110px;
+  right: -102px;
+  z-index: -2;
+}
+.processes__box-right-2 {
+  bottom: 110px;
+  right: 86px;
+  z-index: -2;
+}
+.processes__cloud-small {
+  top: 370px;
+  left: 102px;
+}
+.processes__cloud {
+  top: 300px;
+  right: 70px;
 }
