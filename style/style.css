@@ -46,6 +46,16 @@ body a {
   line-height: 30px;
 }
 
+.form {
+  margin-top: 44px;
+  text-align: center;
+}
+
+label {
+  color: #fff;
+  margin-top: 11px;
+}
+
 .processes img {
   position: absolute;
 }
@@ -167,14 +177,6 @@ body a {
   line-height: 32px;
 }
 
-.main-screen__form {
-  margin-top: 44px;
-}
-
-.main-screen__form label {
-  color: #fff;
-}
-
 .form__text {
   width: 284px;
   height: 86px;
@@ -231,14 +233,14 @@ body a {
 
 .location-left {
   position: absolute;
-  left: 16%;
-  top: 26%;
+  left: 16.76789%;
+  top: 155px;
 }
 
 .location-right {
   position: absolute;
-  right: 16%;
-  top: 0;
+  right: 16.8999%;
+  top: 14px;
 }
 
 .cloud-left {
@@ -522,7 +524,7 @@ body a {
   border-bottom: 2px dashed #7700D1;
 }
 
-.processes__link-after-items {
+.link__dashed {
   color: #fff;
   margin: 0 auto;
   margin-top: 54px;
@@ -575,5 +577,105 @@ body a {
 .processes__cloud {
   top: 300px;
   right: 70px;
+}
+
+.work {
+  position: relative;
+  overflow: hidden;
+}
+
+.work__text p {
+  margin-bottom: 0;
+}
+
+.work__box-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work_button {
+  color: #3e3300;
+  text-align: center;
+  font-family: "Golos Text", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.28px;
+}
+
+.work__img {
+  margin: 58px 0 130px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work__house-left {
+  opacity: 0.3;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+.work__house-right {
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.work__sun {
+  position: absolute;
+  bottom: 539px;
+  right: 17%;
+}
+
+.work__cloud-small {
+  position: absolute;
+  bottom: 395px;
+  right: 30%;
+}
+
+.work__cloud {
+  position: absolute;
+  bottom: 520px;
+  left: 30%;
+}
+
+.work__cross1 {
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.work__cross2 {
+  position: absolute;
+  bottom: 42%;
+  left: 36%;
+}
+
+.work__cross3 {
+  position: absolute;
+  bottom: 46%;
+  right: 42%;
+}
+
+.info {
+  border-radius: 38px;
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
 }
 /*# sourceMappingURL=style.css.map */

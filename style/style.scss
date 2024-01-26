@@ -94,12 +94,6 @@
   font-weight: 400;
   line-height: 32px;
 }
-.main-screen__form {
-  margin-top: 44px;
-  label {
-    color: #fff;
-  }
-}
 .form__text {
   width: 284px;
   height: 86px;
@@ -132,13 +126,13 @@
 }
 .location-left {
   position: absolute;
-  left: 16%;
-  top: 26%;
+  left: 16.76789%;
+  top: 155px;
 }
 .location-right {
   position: absolute;
-  right: 16%;
-  top: 0;
+  right: 16.8999%;
+  top: 14px;
 }
 .cloud-left {
   position: absolute;
@@ -314,7 +308,7 @@
 }
 .processes__item {
   flex: 0 1 48%;
-  height: 378px;
+  height: 378px; ///////////////
   border-radius: 38px;
   background: #fff;
   padding: 52px 52px 43px 52px;
@@ -362,7 +356,7 @@
   font-weight: 600;
   border-bottom: 2px dashed $main-bg;
 }
-.processes__link-after-items {
+.link__dashed {
   color: #fff;
   margin: 0 auto;
   margin-top: 54px;
@@ -406,4 +400,82 @@
 .processes__cloud {
   top: 300px;
   right: 70px;
+}
+.work {
+  position: relative;
+  overflow: hidden;
+}
+.work__text {
+  p {
+    margin-bottom: 0;
+  }
+}
+.work__box-form {
+  display: flex;
+  justify-content: center;
+}
+.work_button {
+  color: #3e3300;
+  text-align: center;
+  font-family: $font-fam-Golos;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.28px;
+}
+.work__img {
+  margin: 58px 0 130px 0;
+  display: flex;
+  justify-content: center;
+}
+.work__house-left {
+  opacity: 0.3;
+  transform: scale(-1, 1);
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.work__house-right {
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+.work__sun {
+  position: absolute;
+  bottom: 539px;
+  right: 17%;
+}
+.work__cloud-small {
+  position: absolute;
+  bottom: 395px;
+  right: 30%;
+}
+.work__cloud {
+  position: absolute;
+  bottom: 520px;
+  left: 30%;
+}
+.work__cross1 {
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.work__cross2 {
+  position: absolute;
+  bottom: 42%;
+  left: 36%;
+}
+.work__cross3 {
+  position: absolute;
+  bottom: 46%;
+  right: 42%;
+}
+.info {
+  border-radius: 38px;
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
 }
