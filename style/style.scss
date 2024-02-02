@@ -479,3 +479,9 @@
   margin: 0 auto;
   height: 400px;
 }
+.info {
+  h2 {
+    color: $main-bg;
+    text-align: center;
+  }
+}

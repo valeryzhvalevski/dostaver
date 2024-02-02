@@ -678,4 +678,9 @@ label {
   margin: 0 auto;
   height: 400px;
 }
+
+.info h2 {
+  color: #7700D1;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
