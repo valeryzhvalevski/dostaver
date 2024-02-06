@@ -64,4 +64,26 @@ label {
     position: absolute;
   }
 }
-
+.clients {
+  position: relative;
+  overflow: hidden;
+  span{
+    font-weight: 700;
+  }
+  p {
+    text-align: center;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clients__text {
+    p {
+      width: 65%;
+    }
+  }
+}

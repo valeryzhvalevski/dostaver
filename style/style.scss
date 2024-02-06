@@ -484,15 +484,17 @@
   justify-content: space-around;
   padding: 7%;
   h2 {
-    color: #8C5FB2;
+    color: #8c5fb2;
     text-align: center;
     margin-bottom: 30px;
   }
-p {
-  color: #8C5FB2;
-}
+  p {
+    color: #8c5fb2;
+    text-align: center;
+  }
 }
 .info__blocks {
+  position: relative;
   width: 85%;
   display: flex;
   flex-wrap: wrap;
@@ -502,14 +504,47 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(50% - 5px); 
+  width: calc(50% - 5px);
   gap: 15px;
 }
 
 .info__block:nth-child(n + 3) {
-  width: calc(
-    33.33% - 5px
-  ); 
-  margin-top: 30px; 
-
+  width: calc(33.33% - 5px);
+  margin-top: 30px;
+}
+.clients__content {
+  margin: 0 auto;
+  width: 55%;
+  display: flex;
+  gap: 3rem;
+  overflow: hidden;
+}
+.clients__item {
+  box-sizing: border-box;
+  border: 0.13rem solid rgb(255, 255, 255);
+  border-radius: 2.38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: $main-bg;
+  z-index: 3;
+}
+.clients__post {
+  position: absolute;
+  bottom: 0;
+  left: -5rem;
+}
+.clients__car {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(-1, 1);
+  opacity: 0.05;
+}
+.clients__line {
+  position: absolute;
+  bottom: 0;
+  opacity: 0.05;
 }
