@@ -123,16 +123,28 @@
   top: 17%;
   width: 63%;
   z-index: -1;
+  opacity: 0.04;
+  @media screen and (max-width: 1650px) {
+    display: none;
+  }
 }
 .location-left {
   position: absolute;
   left: 16.76789%;
   top: 155px;
+  opacity: 0.04;
+  @media screen and (max-width: 1650px) {
+    display: none;
+  }
 }
 .location-right {
   position: absolute;
   right: 16.8999%;
   top: 14px;
+  opacity: 0.04;
+  @media screen and (max-width: 1650px) {
+    display: none;
+  }
 }
 .cloud-left {
   position: absolute;
@@ -154,6 +166,9 @@
   bottom: 0;
   right: -4%;
   z-index: -2;
+  @media screen and (max-width: 1650px) {
+    display: none;
+  }
 }
 .sun {
   position: absolute;
@@ -264,24 +279,36 @@
   left: 0;
   opacity: 0.2;
   z-index: -1;
+  @media screen and (max-width: 1650px) {
+    display: none;
+  }
 }
 .price__bg-img__left-location {
   position: absolute;
   bottom: 290px;
   left: 25px;
   z-index: -1;
+  @media screen and (max-width: 1330px) {
+    opacity: 0.05;
+  }
 }
 .price__bg-img__right-location {
   position: absolute;
   bottom: 582px;
   right: 57px;
   z-index: -1;
+  @media screen and (max-width: 1330px) {
+    opacity: 0.05;
+  }
 }
 .price__bg-img__right-location-line {
   position: absolute;
   bottom: 521px;
   right: 85px;
   z-index: -1;
+  @media screen and (max-width: 1330px) {
+    opacity: 0.05;
+  }
 }
 .price__bg-img__cloud {
   position: absolute;
@@ -305,6 +332,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (max-width: 1375px) {
+    max-width: 73%;
+  }
 }
 .processes__item {
   flex: 0 1 48%;
@@ -312,6 +342,9 @@
   border-radius: 38px;
   background: #fff;
   padding: 52px 52px 43px 52px;
+  @media screen and (max-width: 1775px) {
+    padding: 32px 32px 23px 32px;
+  }
 }
 .processes__top-of-item {
   display: flex;
@@ -338,6 +371,9 @@
   line-height: 28px;
 }
 .processes__body-of-item {
+  @media screen and (max-width: 1586px) {
+    margin-top: 22px;
+  }
 }
 .processes__body-of-item-text {
   color: $main-bg;
@@ -346,6 +382,9 @@
   font-weight: 400;
   line-height: 28px;
   margin: 30px 0;
+  @media screen and (max-width: 1586px) {
+    margin: 12px 0;
+  }
 }
 .processes__link {
   color: $main-bg;
@@ -366,36 +405,79 @@
   bottom: 100px;
   left: 0;
   z-index: -2;
+  @media screen and (max-width: 1550px) {
+    scale: 0.5;
+    bottom: -17px;
+    left: -95px;
+  }
 }
 .processes__stock-right {
   transform: scale(-1, 1);
   bottom: 100px;
   right: 0;
   z-index: -2;
+  @media screen and (max-width: 1550px) {
+    scale: 0.5;
+    bottom: -17px;
+    right: -95px;
+  }
 }
 .processes__box-left-1 {
   bottom: 110px;
   left: -102px;
   z-index: -2;
+  @media screen and (max-width: 1550px) {
+    scale: 0.5;
+    bottom: 60px;
+    left: -85px;
+  }
+  @media screen and (max-width: 1240px) {
+    opacity: 0.1;
+  }
 }
 .processes__box-left-2 {
   bottom: 110px;
   left: 86px;
   z-index: -2;
+  @media screen and (max-width: 1550px) {
+    scale: 0.5;
+    bottom: 60px;
+    left: 9px;
+  }
+  @media screen and (max-width: 1240px) {
+    opacity: 0.1;
+  }
 }
 .processes__box-right-1 {
   bottom: 110px;
   right: -102px;
   z-index: -2;
+  @media screen and (max-width: 1550px) {
+    scale: 0.5;
+    bottom: 60px;
+    right: -85px;
+  }
+  @media screen and (max-width: 1240px) {
+    opacity: 0.1;
+  }
 }
 .processes__box-right-2 {
   bottom: 110px;
   right: 86px;
   z-index: -2;
+  @media screen and (max-width: 1550px) {
+    scale: 0.5;
+    bottom: 60px;
+    right: 9px;
+  }
+  @media screen and (max-width: 1240px) {
+    opacity: 0.1;
+  }
 }
 .processes__cloud-small {
   top: 370px;
   left: 102px;
+  z-index: -1;
 }
 .processes__cloud {
   top: 300px;
@@ -434,12 +516,18 @@
   position: absolute;
   bottom: 0;
   left: 10%;
+  @media screen and (max-width: 1650px) {
+    height: 40%;
+  }
 }
 .work__house-right {
   opacity: 0.3;
   position: absolute;
   bottom: 0;
   right: 10%;
+  @media screen and (max-width: 1650px) {
+    height: 40%;
+  }
 }
 .work__sun {
   position: absolute;
@@ -477,7 +565,7 @@
   background: #fff;
   width: 80%;
   margin: 0 auto;
-  height: 400px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -535,6 +623,9 @@
   position: absolute;
   bottom: 0;
   left: -5rem;
+  @media screen and (max-width: 1650px) {
+    display: none;
+  }
 }
 .clients__car {
   position: absolute;
@@ -542,6 +633,9 @@
   right: 0;
   transform: scale(-1, 1);
   opacity: 0.05;
+  @media screen and (max-width: 1650px) {
+    right: -5%;
+  }
 }
 .clients__line {
   position: absolute;
@@ -609,6 +703,9 @@
   height: 540px;
   right: 19%;
   bottom: -135%;
+  @media screen and (max-width: 1650px) {
+    right: 12%;
+  }
 }
 .experience__circle__link {
   color: rgb(76, 0, 133);
