@@ -862,7 +862,7 @@ label {
   background: #fff;
   width: 80%;
   margin: 0 auto;
-  height: 600px;
+  height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,13 +875,12 @@ label {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 7%;
+  padding: 4%;
 }
 
 .info h2 {
   color: #8c5fb2;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .info p {
@@ -913,13 +912,13 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(50% - 5px);
+  width: calc(50% - 10px);
   gap: 15px;
 }
 
 .info__block:nth-child(n + 3) {
-  width: calc(33.33% - 5px);
-  margin-top: 30px;
+  width: calc(33.33% - 10px);
+  margin-top: 40px;
 }
 
 .clients__content {
@@ -930,6 +929,18 @@ label {
   display: flex;
   gap: 3rem;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1550px) {
+  .clients__content {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .clients__content {
+    width: 75%;
+  }
 }
 
 .clients__item {
@@ -987,7 +998,14 @@ label {
 }
 
 .experience {
-  height: 100vh;
+  height: 1060px;
+}
+
+@media screen and (max-width: 1300px) {
+  .experience__text {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 .experience__content {
@@ -1057,10 +1075,28 @@ label {
   bottom: -95%;
 }
 
+@media screen and (max-width: 1515px) {
+  .circle2 {
+    left: 17%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .circle2 {
+    left: 10%;
+  }
+}
+
 .circle3 {
   width: 292px;
   height: 292px;
   right: 18%;
+}
+
+@media screen and (max-width: 1515px) {
+  .circle3 {
+    right: 12%;
+  }
 }
 
 .circle4 {
@@ -1090,10 +1126,16 @@ label {
   left: 21%;
 }
 
+@media screen and (max-width: 1300px) {
+  .experience__car {
+    left: 12%;
+  }
+}
+
 .send {
   position: relative;
   overflow: hidden;
-  height: 45vh;
+  height: 525px;
 }
 
 .send__tree {
