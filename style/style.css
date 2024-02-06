@@ -813,4 +813,102 @@ label {
   bottom: 0;
   opacity: 0.05;
 }
+
+.experience {
+  height: 100vh;
+}
+
+.experience__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 75px;
+}
+
+.experience__me {
+  border-radius: 10rem;
+}
+
+.experience__circle {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experience__circle span {
+  color: #4c0085;
+  font-family: "Golos Text", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.experience__circle p {
+  margin-top: 27px;
+  color: #4c0085;
+  font-family: "Golos Text", sans-serif;
+  font-size: 1.13rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.circle1 {
+  width: 292px;
+  height: 292px;
+  left: 18%;
+}
+
+.circle2 {
+  width: 385px;
+  height: 385px;
+  left: 25%;
+  bottom: -95%;
+}
+
+.circle3 {
+  width: 292px;
+  height: 292px;
+  right: 18%;
+}
+
+.circle4 {
+  width: 540px;
+  height: 540px;
+  right: 19%;
+  bottom: -135%;
+}
+
+.experience__circle__link {
+  color: #4c0085;
+  border-color: #4c0085;
+  margin-top: 10px;
+}
+
+.experience__car {
+  height: 190px;
+  z-index: -1;
+  position: absolute;
+  bottom: -136%;
+  left: 21%;
+}
 /*# sourceMappingURL=style.css.map */

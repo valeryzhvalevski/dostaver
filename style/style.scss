@@ -548,3 +548,77 @@
   bottom: 0;
   opacity: 0.05;
 }
+.experience {
+  height: 100vh;
+}
+.experience__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+.experience__me {
+  border-radius: 10rem;
+}
+.experience__circle {
+  span {
+    color: rgb(76, 0, 133);
+    font-family: $font-fam-Golos;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  p {
+    margin-top: 27px;
+    color: rgb(76, 0, 133);
+    font-family: $font-fam-Golos;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    text-align: center;
+    padding: 0 25px;
+  }
+  position: absolute;
+  background-color: #fff;
+  border-radius: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // gap: 27px;
+}
+.circle1 {
+  width: 292px;
+  height: 292px;
+  left: 18%;
+}
+.circle2 {
+  width: 385px;
+  height: 385px;
+  left: 25%;
+  bottom: -95%;
+}
+.circle3 {
+  width: 292px;
+  height: 292px;
+  right: 18%;
+}
+.circle4 {
+  width: 540px;
+  height: 540px;
+  right: 19%;
+  bottom: -135%;
+}
+.experience__circle__link {
+  color: rgb(76, 0, 133);
+  border-color: rgb(76, 0, 133);
+  margin-top: 10px;
+}
+.experience__car {
+  height: 190px;
+  z-index: -1;
+  position: absolute;
+  bottom: -136%;
+  left: 21%;
+}
