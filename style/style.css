@@ -107,6 +107,12 @@ label {
   width: 65%;
 }
 
+@media screen and (max-width: 431px) {
+  .clients .clients__text p {
+    width: 100%;
+  }
+}
+
 .header {
   height: 123px;
 }
@@ -1014,7 +1020,14 @@ label {
 }
 
 @media screen and (max-width: 431px) {
-  .processes__stock-left, .processes__stock-right, .processes__box-left-1, .processes__box-left-2, .processes__box-right-1, .processes__box-right-2, .processes__cloud-small, .processes__cloud {
+  .processes__stock-left,
+  .processes__stock-right,
+  .processes__box-left-1,
+  .processes__box-left-2,
+  .processes__box-right-1,
+  .processes__box-right-2,
+  .processes__cloud-small,
+  .processes__cloud {
     display: none;
   }
 }
@@ -1288,6 +1301,18 @@ label {
   }
 }
 
+@media screen and (max-width: 431px) {
+  .clients__text h2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .clients__text_body {
+    width: 100%;
+  }
+}
+
 .clients__content {
   margin: 0 auto;
   width: 55%;
@@ -1310,6 +1335,17 @@ label {
   }
 }
 
+@media screen and (max-width: 431px) {
+  .clients__content {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 .clients__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1329,6 +1365,12 @@ label {
   padding: 1.5rem;
   background-color: #7700D1;
   z-index: 3;
+}
+
+@media screen and (max-width: 431px) {
+  .clients__item {
+    gap: 0.8rem;
+  }
 }
 
 .clients__post {
@@ -1386,6 +1428,20 @@ label {
   margin-top: 75px;
 }
 
+@media screen and (max-width: 431px) {
+  .experience__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+}
+
 .experience__me {
   border-radius: 10rem;
 }
@@ -1429,6 +1485,12 @@ label {
   padding: 0 25px;
 }
 
+@media screen and (max-width: 431px) {
+  .experience__circle {
+    position: initial;
+  }
+}
+
 .circle1 {
   width: 292px;
   height: 292px;
@@ -1454,6 +1516,13 @@ label {
   }
 }
 
+@media screen and (max-width: 431px) {
+  .circle2 {
+    width: 292px;
+    height: 292px;
+  }
+}
+
 .circle3 {
   width: 292px;
   height: 292px;
@@ -1463,6 +1532,13 @@ label {
 @media screen and (max-width: 1515px) {
   .circle3 {
     right: 12%;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .circle3 {
+    width: 292px;
+    height: 292px;
   }
 }
 
@@ -1496,6 +1572,12 @@ label {
 @media screen and (max-width: 1300px) {
   .experience__car {
     left: 12%;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .experience__car {
+    display: none;
   }
 }
 
