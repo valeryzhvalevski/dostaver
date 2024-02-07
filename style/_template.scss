@@ -16,6 +16,12 @@ body {
     text-decoration: none;
   }
 }
+.wrapper-mobile {
+  @media screen and (max-width: 431px) {
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+}
 .section-block {
   h2 {
     color: #fff;
@@ -24,6 +30,11 @@ body {
     font-size: 46px;
     font-weight: 400;
     margin-top: 100px;
+    @media screen and (max-width: 431px) {
+      margin-top: 38px;
+      line-height: 43px;
+      font-size: 40px;
+    }
   }
   p {
     color: #fff;
@@ -34,8 +45,10 @@ body {
     line-height: 30px;
     margin-top: 25px;
     margin-bottom: 60px;
+    @media screen and (max-width: 431px) {
+      margin-bottom: 25px;
+    }  
   }
-
 }
 .text {
   color: #fff;

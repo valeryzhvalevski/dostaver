@@ -10,6 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 431px) {
+    flex-direction: column;
+    max-width: calc(100% - 60px);
+    .header__links {
+      display: none;
+    }
+  }
 }
 .links {
 }
@@ -30,6 +37,31 @@
   height: 122.683px;
   border-radius: 0px 0px 43px 43px;
   background: #fff;
+  .logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    .logo__title {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 431px) {
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    .logo-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .burger {
+      display: block;
+    }
+  }
+}
+.burger {
+  display: none;
 }
 .logo__title {
   color: #4c0085;
@@ -41,12 +73,28 @@
 .contacts {
   display: flex;
   gap: 26px;
+  @media screen and (max-width: 431px) {
+    margin-top: 20px;
+    gap: 12px;
+  }
+}
+.contacts__tel {
 }
 .contacts__tel-number {
   color: #fff;
   font-family: $font-fam-Golos;
   font-size: 24px;
   font-weight: 500;
+  @media screen and (max-width: 431px) {
+    font-size: 12px;
+    line-height: 1.5rem;
+  }
+}
+.contacts__time {
+  @media screen and (max-width: 431px) {
+    font-size: 9px;
+    line-height: 0rem;
+  }
 }
 .contacts__socials {
   display: flex;
@@ -83,6 +131,22 @@
   .main-screen__ellipse {
     position: absolute;
     bottom: 0;
+    @media screen and (max-width: 431px) {
+      bottom: 15%;
+      left: 8%;
+      width: 89%;
+    }
+  }
+  @media screen and (max-width: 431px) {
+    h1 {
+      font-size: 27px;
+      line-height: 2rem;
+      span {
+        font-size: 52px;
+        line-height: 3rem;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 .main-screen__text {
@@ -93,6 +157,11 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
+  @media screen and (max-width: 431px) {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
 }
 .form__text {
   width: 284px;
@@ -108,6 +177,9 @@
   height: 86px;
   border-radius: 43px;
   background: linear-gradient(180deg, #ffe149 0%, #ffd500 100%);
+  @media screen and (max-width: 431px) {
+    margin-top: 10px;
+  }
 }
 .form__checkbox {
   margin-top: 11px;
@@ -116,7 +188,34 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  position: relative; //
+  position: relative;
+  @media screen and (max-width: 431px) {
+    margin-top: 222px;
+    justify-content: center;
+    .main-screen__images-car {
+      display: none;
+    }
+    .main-screen__images-house {
+      display: none;
+    }
+    .main-screen__images-stock {
+      width: 90%;
+    }
+    .bg-houses,
+    .cloud-small,
+    .cloud-left,
+    .main-screen__line-main-screen {
+      display: none;
+    }
+    .sun {
+      top: -35%;
+    }
+    .cloud-right {
+      top: -14%;
+      left: 14%;
+      width: 15%;
+    }
+  }
 }
 .main-screen__line-main-screen {
   position: absolute;
@@ -178,6 +277,9 @@
 .main-screen__ground {
   position: absolute;
   width: 100%;
+  @media screen and (max-width: 431px) {
+    display: none;
+  }
 }
 .main-screen__sticker {
   position: absolute;
@@ -210,6 +312,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+  }
+  @media screen and (max-width: 431px) {
+    left: 125px;
+    top: 444px;
   }
 }
 .price {
@@ -265,6 +371,9 @@
 }
 .price__bg-img {
   position: relative;
+  @media screen and (max-width: 431px) {
+    display: none;
+  }
 }
 .bg-img__illustration {
   position: absolute;
@@ -322,6 +431,17 @@
   right: 90px;
   z-index: -1;
 }
+.price__car-for-mobile {
+  display: none;
+  @media screen and (max-width: 431px) {
+    display: block;
+    width: 75vw;
+    margin: 50px auto 0 auto;
+    .price__car-for-mobile-car {
+      width: 100%;
+    }
+  }
+}
 .processes {
   overflow: hidden;
   position: relative;
@@ -335,6 +455,10 @@
   @media screen and (max-width: 1375px) {
     max-width: 73%;
   }
+  @media screen and (max-width: 431px) {
+    max-width: 100%;
+    justify-content: center;
+  }
 }
 .processes__item {
   flex: 0 1 48%;
@@ -345,12 +469,19 @@
   @media screen and (max-width: 1775px) {
     padding: 32px 32px 23px 32px;
   }
+  @media screen and (max-width: 431px) {
+    flex: 0 1 100%;
+    height: auto;
+  }
 }
 .processes__top-of-item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 12px;
+  @media screen and (max-width: 431px) {
+    flex-direction: column;
+  }
 }
 .processes__top-of-item-number {
   display: flex;
@@ -369,6 +500,15 @@
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
+  @media screen and (max-width: 431px) {
+    color: rgb(76, 0, 133);
+    font-family: $font-fam-Golos;
+    font-size: 1.38rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    letter-spacing: 0%;
+    text-align: left;
+  }
 }
 .processes__body-of-item {
   @media screen and (max-width: 1586px) {
@@ -400,6 +540,21 @@
   margin: 0 auto;
   margin-top: 54px;
   border-bottom: 2px dashed #fff;
+  @media screen and (max-width: 431px) {
+    margin-top: 0;
+  }
+}
+.processes__house-for-mobile {
+  display: none;
+  @media screen and (max-width: 431px) {
+    display: block;
+    width: 75vw;
+    height: 255px;
+    margin: 50px auto 0 auto;
+    .processes__house-for-mobile-img {
+      width: 100%;
+    }
+  }
 }
 .processes__stock-left {
   bottom: 100px;
@@ -482,6 +637,11 @@
 .processes__cloud {
   top: 300px;
   right: 70px;
+}
+.processes__stock-left, .processes__stock-right, .processes__box-left-1, .processes__box-left-2, .processes__box-right-1, .processes__box-right-2, .processes__cloud-small, .processes__cloud {
+  @media screen and (max-width: 431px) {
+    display: none;
+  }
 }
 .work {
   position: relative;
@@ -611,7 +771,6 @@
   @media screen and (max-width: 1300px) {
     width: 75%;
   }
-
 }
 .clients__item {
   box-sizing: border-box;
@@ -655,7 +814,7 @@
   @media screen and (max-width: 1300px) {
     margin: 0 auto;
     width: 80%;
-    }
+  }
 }
 .experience__content {
   position: relative;
@@ -742,7 +901,6 @@
   @media screen and (max-width: 1300px) {
     left: 12%;
   }
-
 }
 .send {
   position: relative;
