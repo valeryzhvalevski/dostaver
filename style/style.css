@@ -18,6 +18,13 @@ body a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1300px) {
+  .wrapper-tablet {
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 431px) {
   .wrapper-mobile {
     max-width: calc(100% - 60px);
@@ -131,7 +138,7 @@ label {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 984px) {
   .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -188,7 +195,7 @@ label {
   text-align: center;
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 984px) {
   .logo {
     height: 80px;
     width: 100%;
@@ -228,6 +235,12 @@ label {
   display: -ms-flexbox;
   display: flex;
   gap: 26px;
+}
+
+@media screen and (max-width: 984px) {
+  .contacts {
+    margin-top: 25px;
+  }
 }
 
 @media screen and (max-width: 431px) {
@@ -274,6 +287,13 @@ label {
 .main-screen__title {
   margin-top: 90px;
   position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+  .main-screen__title {
+    padding: 30px;
+    margin-top: 40px;
+  }
 }
 
 .main-screen__title h1 {
@@ -498,6 +518,12 @@ label {
   right: 5%;
 }
 
+@media screen and (max-width: 1400px) {
+  .sun {
+    right: 55%;
+  }
+}
+
 .main-screen__ground {
   position: absolute;
   width: 100%;
@@ -555,6 +581,19 @@ label {
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .main-screen__sticker {
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main-screen__sticker {
+    top: -12vh;
+    scale: 0.5;
+  }
 }
 
 @media screen and (max-width: 431px) {
@@ -638,6 +677,12 @@ label {
   right: 0;
 }
 
+@media screen and (max-width: 1472px) {
+  .bg-img__illustration {
+    width: 44%;
+  }
+}
+
 .price__bg-img__car {
   position: absolute;
   z-index: -1;
@@ -699,11 +744,24 @@ label {
   z-index: -1;
 }
 
+@media screen and (max-width: 1472px) {
+  .price__bg-img__cloud {
+    width: 3%;
+    left: 6%;
+  }
+}
+
 .price__bg-img__cloud-small {
   position: absolute;
   bottom: 355px;
   right: 90px;
   z-index: -1;
+}
+
+@media screen and (max-width: 1472px) {
+  .price__bg-img__cloud-small {
+    width: 3%;
+  }
 }
 
 .price__car-for-mobile {
@@ -1107,7 +1165,7 @@ label {
   }
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 1250px) {
   .work__house-left {
     display: none;
   }
@@ -1126,7 +1184,7 @@ label {
   }
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 1250px) {
   .work__house-right {
     display: none;
   }
@@ -1230,6 +1288,7 @@ label {
 .info h2 {
   color: #8c5fb2;
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .info p {
@@ -1255,6 +1314,7 @@ label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 431px) {
@@ -1332,6 +1392,7 @@ label {
 @media screen and (max-width: 1300px) {
   .clients__content {
     width: 75%;
+    gap: 2rem;
   }
 }
 
@@ -1367,6 +1428,12 @@ label {
   z-index: 3;
 }
 
+@media screen and (max-width: 1300px) {
+  .clients__item {
+    padding: 1.1rem;
+  }
+}
+
 @media screen and (max-width: 431px) {
   .clients__item {
     gap: 0.8rem;
@@ -1397,6 +1464,13 @@ label {
 @media screen and (max-width: 1650px) {
   .clients__car {
     right: -5%;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .clients__car {
+    right: 0;
+    width: 10%;
   }
 }
 
@@ -1815,6 +1889,7 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 5px;
 }
 
 @media screen and (max-width: 431px) {

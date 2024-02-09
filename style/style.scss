@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (max-width: 431px) {
+  @media screen and (max-width: 984px) {
     flex-direction: column;
     max-width: calc(100% - 60px);
     .header__links {
@@ -46,7 +46,7 @@
       text-align: center;
     }
   }
-  @media screen and (max-width: 431px) {
+  @media screen and (max-width: 984px) {
     height: 80px;
     width: 100%;
     justify-content: space-between;
@@ -73,6 +73,10 @@
 .contacts {
   display: flex;
   gap: 26px;
+  @media screen and (max-width: 984px) {
+    margin-top: 25px;
+    }
+
   @media screen and (max-width: 431px) {
     margin-top: 20px;
     gap: 12px;
@@ -113,6 +117,11 @@
 .main-screen__title {
   margin-top: 90px;
   position: relative;
+  @media screen and (max-width: 1100px) {
+    padding: 30px;
+    margin-top: 40px;
+  }
+
   h1 {
     color: #fff;
     font-family: $font-fam-Golos;
@@ -273,6 +282,9 @@
   position: absolute;
   top: 18%;
   right: 5%;
+  @media screen and (max-width: 1400px) {
+    right: 55%;
+  }
 }
 .main-screen__ground {
   position: absolute;
@@ -313,6 +325,14 @@
     font-weight: 400;
     line-height: 1;
   }
+  @media screen and (max-width: 1300px) {
+    left: 10vw;
+  }
+  @media screen and (max-width: 1100px) {
+    top: -12vh;
+    scale: 0.5;
+  }
+
   @media screen and (max-width: 431px) {
     left: 125px;
     top: 444px;
@@ -380,6 +400,9 @@
   z-index: -2;
   bottom: 0;
   right: 0;
+  @media screen and (max-width: 1472px) {
+    width: 44%;
+  }
 }
 .price__bg-img__car {
   position: absolute;
@@ -424,12 +447,19 @@
   bottom: 512px;
   left: 121px;
   z-index: -1;
+  @media screen and (max-width: 1472px) {
+    width: 3%;
+    left: 6%;
+  }
 }
 .price__bg-img__cloud-small {
   position: absolute;
   bottom: 355px;
   right: 90px;
   z-index: -1;
+  @media screen and (max-width: 1472px) {
+    width: 3%;
+  }
 }
 .price__car-for-mobile {
   display: none;
@@ -702,7 +732,7 @@
   @media screen and (max-width: 1650px) {
     height: 40%;
   }
-  @media screen and (max-width: 431px) {
+  @media screen and (max-width: 1250px) {
     display: none;
   }
 }
@@ -714,7 +744,7 @@
   @media screen and (max-width: 1650px) {
     height: 40%;
   }
-  @media screen and (max-width: 431px) {
+  @media screen and (max-width: 1250px) {
     display: none;
   }
 }
@@ -781,6 +811,7 @@
   h2 {
     color: #8c5fb2;
     text-align: center;
+    margin-bottom: 32px;
   }
   p {
     color: #8c5fb2;
@@ -797,6 +828,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
   @media screen and (max-width: 431px) {
     flex-direction: column;
     width: 100%;
@@ -845,6 +877,7 @@
   }
   @media screen and (max-width: 1300px) {
     width: 75%;
+    gap: 2rem;
   }
   @media screen and (max-width: 431px) {
     width: 100%;
@@ -863,6 +896,9 @@
   padding: 1.5rem;
   background-color: $main-bg;
   z-index: 3;
+  @media screen and (max-width: 1300px) {
+    padding: 1.1rem;
+  }
   @media screen and (max-width: 431px) {
     gap: 0.8rem;
   }
@@ -883,6 +919,10 @@
   opacity: 0.05;
   @media screen and (max-width: 1650px) {
     right: -5%;
+  }
+  @media screen and (max-width: 1550px) {
+    right: 0;
+    width: 10%;
   }
 }
 .clients__line {
@@ -1121,8 +1161,8 @@
   flex-direction: row;
   gap: 25px;
   @media screen and (max-width: 431px) {
-order: 3;  }
-
+    order: 3;
+  }
 }
 .footer__link {
   margin: 0;
@@ -1155,6 +1195,7 @@ order: 3;  }
 }
 .footer__socials {
   display: flex;
+  gap: 5px;
   @media screen and (max-width: 431px) {
     gap: 4px;
   }

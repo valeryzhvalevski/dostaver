@@ -16,6 +16,12 @@ body {
     text-decoration: none;
   }
 }
+.wrapper-tablet {
+  @media screen and (max-width: 1300px) {
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+  }
+}
 .wrapper-mobile {
   @media screen and (max-width: 431px) {
     max-width: calc(100% - 60px);
