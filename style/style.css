@@ -318,6 +318,12 @@ label {
   bottom: 0;
 }
 
+@media screen and (max-width: 1100px) {
+  .main-screen__title .main-screen__ellipse {
+    bottom: 135px;
+  }
+}
+
 @media screen and (max-width: 431px) {
   .main-screen__title .main-screen__ellipse {
     bottom: 15%;

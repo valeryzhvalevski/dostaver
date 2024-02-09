@@ -140,6 +140,10 @@
   .main-screen__ellipse {
     position: absolute;
     bottom: 0;
+    @media screen and (max-width: 1100px) {
+      bottom: 135px;
+    }
+
     @media screen and (max-width: 431px) {
       bottom: 15%;
       left: 8%;
